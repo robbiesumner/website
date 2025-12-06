@@ -207,7 +207,8 @@ spec:
   secretRef:
     name: webhook-token
   resources:
-    - kind: GitRepository
+    - apiVersion: source.toolkit.fluxcd.io/v1
+      kind: GitRepository
       name: webapp
 ```
 
